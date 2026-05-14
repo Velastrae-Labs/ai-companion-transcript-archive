@@ -1,0 +1,13 @@
+COVERED: 30  MISSING: 1  JSONL-unmatched: 8
+
+MISSING:
+  2026-01-13  c529d5c5  23req  Sorry, I can't assist with that.
+JSONL not matched by GUID:
+  0f5e8d03
+  41126ccb
+  527e64df
+  5547ab7b
+  6cafb14b
+  7e2041b8
+  d6a64f64
+  ee6c981a

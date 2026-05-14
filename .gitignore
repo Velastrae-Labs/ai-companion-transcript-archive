@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Cloudflare / Wrangler
+.wrangler/
+.dev.vars
+.dev.vars.*
+wrangler.toml.bak
+
+# Secrets — never commit
+.env
+.env.*
+*.secret
+secrets.json
+
+# Local databases / state
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+scripts/.extract_progress.json
+
+# PII scrub tool — kept local only, not for the public mirror
+replace_pii.py
+
+# Raw transcripts — never publish conversation data
+Transcripts/
+*-conversations.json
+*-export.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

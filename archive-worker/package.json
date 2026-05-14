@@ -1,0 +1,13 @@
+{
+  "name": "archive-worker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "deploy": "npx wrangler deploy"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@cloudflare/workers-types": "^4.202"
+  }
+}
