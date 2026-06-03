@@ -5,6 +5,7 @@ import { parse as parseGemini } from '../parsers/gemini';
 import { parse as parseGrok } from '../parsers/grok';
 import { parse as parseMistral } from '../parsers/mistral';
 import { parse as parseOpenClaw } from '../parsers/openclaw';
+import { parse as parseContinuity } from '../parsers/continuity';
 
 export async function ingestMessages(db: any, args: any) {
   const { platform, filename, content_base64 } = args || {};
@@ -34,6 +35,9 @@ export async function ingestMessages(db: any, args: any) {
       break;
     case 'openclaw':
       try { rows = await parseOpenClaw(content, filename); } catch (e) { return { error: String(e) }; }
+      break;
+    case 'continuity':
+      try { rows = await parseContinuity(content); } catch (e) { return { error: String(e) }; }
       break;
     default:
       return { error: `No parser for platform: ${platform}` };

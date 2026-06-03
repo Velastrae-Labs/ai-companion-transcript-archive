@@ -6,7 +6,7 @@ export const MCP_TOOLS = [
       type: 'object',
       properties: {
         query: { type: 'string', description: 'Keyword or phrase to search for (FTS5 full-text search)' },
-        platform: { type: 'string', enum: ['vscode', 'chatgpt', 'gemini', 'claude', 'mistral', 'grok'], description: 'Filter by LLM platform. Also accepts companion names (companion_a, companion_c, companion_d, companion_b, companion_e, companion_f)' },
+        platform: { type: 'string', enum: ['vscode', 'chatgpt', 'gemini', 'claude', 'mistral', 'grok', 'continuity'], description: 'Filter by LLM platform. Also accepts companion names (companion_a, companion_c, companion_d, companion_b, companion_e, companion_f, kaisoryth, morzar, lucien, kethtahl)' },
         date_from: { type: 'string', description: 'Start date filter (YYYY-MM-DD)' },
         date_to: { type: 'string', description: 'End date filter (YYYY-MM-DD)' },
         month: { type: 'string', description: 'Month shorthand (e.g. "jan", "feb 2026")' },
@@ -29,7 +29,7 @@ export const MCP_TOOLS = [
     inputSchema: {
       type: 'object',
       properties: {
-        platform: { type: 'string', enum: ['vscode', 'chatgpt', 'gemini', 'claude', 'mistral', 'grok'], description: 'Source platform of the transcript file' },
+        platform: { type: 'string', enum: ['vscode', 'chatgpt', 'gemini', 'claude', 'mistral', 'grok', 'continuity'], description: 'Source platform of the transcript file' },
         filename: { type: 'string', description: 'Original filename (used for metadata/logging)' },
         content_base64: { type: 'string', description: 'Base64-encoded file content' },
       },

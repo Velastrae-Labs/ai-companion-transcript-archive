@@ -8,7 +8,7 @@ command = "npm run build"
 [[d1_databases]]
 binding = "ARCHIVE_DB"
 database_name = "companion-archive"
-database_id = "your-d1-database-id-here"
+database_id = "7c8dc56d-d29d-4e03-bf7a-a4a87df16279"
 
 
 [vars]
